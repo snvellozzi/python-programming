@@ -1,14 +1,14 @@
-# Returns the sum of 2 ints and doubles the sum if the ints are the same
-def double_sum(a, b):
-    if a == b:
-        return 2*(a+b)
-    else:
-        return a + b
+# Returns a new string where for every char in the original string, there are two chars.
+def double_char(string):
+    new_str = ""
+
+    for i in range(len(string)):
+        new_str += 2*string[i:i+1]
+    return new_str
 
 
-print(double_sum(1, 3))
-print(double_sum(2, 2))
-print(double_sum(9, 8))
-print(double_sum(4, 4))
-print(double_sum(10, 10))
-print(double_sum(5, 6))
+print(double_char("The"))
+print(double_char("AAABB"))
+print(double_char("Hi-There"))
+print(double_char("Hello World"))
+print(double_char("Hii everyoneeee"))
